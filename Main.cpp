@@ -6,7 +6,14 @@ using namespace std;
 
 int main(void)
 {
-    cout << "TEST" << endl;
+    Gacha g;
+
+    srand(time(NULL));
+
+    for(int i=0; i<100; i++)
+    {
+        cout << g.pull();
+    }
 
     return 0;
 }
